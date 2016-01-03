@@ -8,7 +8,7 @@ I can't ever recall the magic methods of PHP and sometimes google doesn't seem t
 
 * **__construct(/* arguments */)** : called on construction of the object
 * **__destruct()** : called when the object is destroyed
-* **__get($var)** : called when the object does NOT contain the property $var or when $var is private or protected. ALSO called on empty($object-&gt;$var) if $var is private or protected
+* **__get($var)** : called when the object does NOT contain the property $var or when $var is private or protected. ALSO called on empty($object->$var) if $var is private or protected
 * **__set($var, $value)** : called when the object does NOT contain the property $var or when $var is private or protected.
 * **__call($method, $args)** : called when the object does NOT contain the method $method. Unlike __get and __set it doesn't hide private or protected methods.
 * **__callStatic($method, $args)** : equivalent to __call but for static calls. New as of 5.3.
