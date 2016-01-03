@@ -4,14 +4,18 @@
 <html>
 <head>
   <meta charset='UTF-8'/>
-  <title>Poole &middot; Serving Jekyll faithfully</title>
+  <title>{{site.prose.title}}</title>
   <link rel='shortcut icon' href='{{site.root_dir}}/images/favicon.ico' type='image/x-icon' />
   <link rel='stylesheet' href='{{site.root_dir}}/fonts/open-sans.css'>
   <link rel='stylesheet' href='{{site.root_dir}}/app.css'>
 </head>
 <body>
   <div id='container'>
-    <div id='main'>{{content}}</div>
+    <div id="start" class="repos">
+      <h1>{{site.prose.title}}</h1>
+      <p>A developers rants about PHP, JavaScript, Python, C# and other stuff.</p>
+      <div id='main'>{{content}}</div>
+    </div>
   </div>
 
   <div id='footer'>

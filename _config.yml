@@ -1,10 +1,61 @@
-auto: true
+baseurl:
 server: true
-pygments: true
-permalink: none
-root_dir: ""
-oauth_client_id: caf55c20366465a1332d
-gatekeeper_url: http://poole-oauth-staging.herokuapp.com
-exclude:
-- .gitignore
-- README.md
+permalink: pretty
+markdown: rdiscount
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://plind.dk/'
+  relativeLinks: 'http://alea.fastaval.dk/links.jsonp'
+  media: 'media'
+  title: "@fake&#39;s"
+  ignore:
+    - _config.yml
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

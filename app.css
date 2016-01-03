@@ -1107,6 +1107,8 @@ label.error {
 .scrolling  { overflow: auto; }
 .clipping   { overflow: hidden; }
 
+.month {border-top: 1px solid #ccc;}
+.articles > a {float: left; clear: left;}
 
 /* ------------------------------------------
   ios and small screen alterations
